@@ -1,23 +1,41 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: burlywood;
     text-align: center;
 }
-h2{
+
+h2 {
     color: darkgreen;
 }
-#msg{
+
+#msg {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-#gameboard
-{
+
+#container {
+    position: relative; /* Make container a positioned element */
+    display: inline-block;
+}
+
+#gameboard {
     border: 3px solid;
 }
-#score{
+
+#score {
     margin-top: 10px;
     font-size: 2em;
+}
+
+#restartButton {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 45%; /* Center vertically within canvas */
+    left: 50%; /* Center horizontally within canvas */
+    transform: translate(-50%, 30px); /* Offset slightly below "Game Over" text */
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
 }
